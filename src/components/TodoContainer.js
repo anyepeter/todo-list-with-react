@@ -1,5 +1,6 @@
 import React from "react"
 import TodosList from "./TodosList";
+import Header from "./Header"
 
 class TodoContainer extends React.Component {
 
@@ -25,7 +26,7 @@ class TodoContainer extends React.Component {
   render() {
     return (
       <React.Fragment>
-        
+        <Header />
         <TodosList todos={this.state.todos} />
 
       </React.Fragment>
