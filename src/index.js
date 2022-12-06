@@ -1,19 +1,15 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+// File components
+import TodoContainer from './funcionBased/components/TodoContainer';
+// Stylesheet
+import './funcionBased/App.css';
 
-import { BrowserRouter as Router } from "react-router-dom";
+// The root element for the app.
+const root = createRoot(document.getElementById('root'));
 
-//component
-import TodoContainer from "./functionBased/components/TodoContainer"
-
-//stylesheet
-import "./functionBased/App.css"
-
-ReactDOM.render(
+root.render(
   <React.StrictMode>
-    <Router basename={process.env.PUBLIC_URL}>
-      <TodoContainer />
-    </Router>  
-  </React.StrictMode>, 
-  document.getElementById("root")
+    <TodoContainer />
+  </React.StrictMode>,
 );

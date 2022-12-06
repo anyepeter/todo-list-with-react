@@ -1,21 +1,23 @@
-import React from 'react'
-import TodoItem from './TodoItem'
-class TodosList extends React.Component{
-  render(){
-    return(
+/*eslint-disable*/
+import React from 'react';
+import TodoItem from './TodoItem';
+
+class TodosList extends React.Component {
+  render() {
+    return (
       <ul>
         {
-          this.props.todos.map(todo => (
+          this.props.todos.map((todo) => (
             <TodoItem
-  key={todo.id}
-  todo={todo}
-  handleChang={this.props.handleChangeProps}
-/>
+              key={todo.id}
+              todo={todo}
+              handleChang={this.props.handleChangeProps}
+            />
           ))
         }
       </ul>
-    )
+    );
   }
 }
 
-export default TodosList
+export default TodosList;
