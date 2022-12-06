@@ -1,15 +1,13 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Todo list app
 
-> Description the project.
+> Create an add with the CRUD functionalities using react the most widely used framework for creating fast and interactive user interface
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React
 
 ## Live Demo (if available)
 
@@ -25,6 +23,7 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+
 
 ### Setup
 
