@@ -4,7 +4,7 @@ const TodoItem = (props) => {
     return(
         <li><input type="checkbox" 
         checked={props.todo.completed}
-        onChange={() => console.log('peter')}
+        onChange={props.inner}
          />{props.todo.title}</li>
     )
 }
