@@ -2,7 +2,10 @@ import React from "react";
 
 const TodoItem = (props) => {
     return(
-        <li>{props.todo.title}</li>
+        <li><input type="checkbox" 
+        checked={props.todo.completed}
+        onChange={() => console.log('peter')}
+         />{props.todo.title}</li>
     )
 }
 
