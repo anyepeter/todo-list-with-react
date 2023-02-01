@@ -9,7 +9,7 @@ const TodosList = (props) => {
                 {
                     props.todos.map(element => {
                         return (
-                        <TodoItem inner={props.event} key={element.id} todo={element} /> )
+                        <TodoItem delete={props.delete} event={props.event} key={element.id} todo={element} /> )
                     })
                 }
             </ul>
